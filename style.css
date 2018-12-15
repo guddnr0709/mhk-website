@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=futura');
+
+
+
+body {
+  font-family: 'futura', sans-serif;
+  background-color: #fafafa;
+  color: #FFB6C1;
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #fdfdfd;
+}
+
+
+.nav a {
+  position: relative;
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.nav a:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  border-bottom: 5px solid black;
+  transform: scaleX(0) translateY(10px);
+  transition: all .3s ease-in-out;
+}
+
+.nav a:hover:after {
+    transform: scaleX(1) translateY(0);
+
+}
+
+
+div {
+  margin: 0;
+}
+
+
+#home {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+#home h1 {
+  font-size: 9em;
+  margin: 16px;
+}
+
+#home h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#home .hero-text-container {
+  text-align: center;
+  padding-top: 128px;
+  padding-bottom: 64px;
+}
+#home .hero-text-container h3 {
+  font-size: 5em
+
+}
+
+.slideshow {
+  min-height: 400px;
+}
+.slideshow-image {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.slideshow-zoom {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  width: 80vw;
+  height: 80vh;
+}
+
+.slideshow-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+}
+#projects {
+  background: linear-gradient(10deg, salmon, darksalmon);
+}
+
+.projects-container {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.project {
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 16px;
+}
+
+
+#project-detail {
+  background-color: pink;
+}
+
+#project-detail h1 {
+  padding-top: 128px;
+  font-size: 8em;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#project-detail p {
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#project-detail img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+.project-filter {
+  max-width: 600px;
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-filter a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact {
+  /* background: linear-gradient(10deg, salmon, darksalmon); */
+  background-image: url("images/background.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+#contact form {
+  margin: 64px;
+}
+
+#contact form input {
+  display: block;
+  margin: 16px;
+  background-color: transparent;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 32px;
+  color: white;
+}
+
+#contact .submit {
+  border: 2px solid pink;
+  border-radius: 10px;
+}
+
+#contact form label {
+  font-size: 32px;
+  margin: 0 16px;
+  color: white;
+}
+
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-top: 64px;
+}
+
+a {
+  font-size: 2em;
+}
+
+
+#about {
+  background-image: url("images/image-8.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+#about h3 {
+  text-align: center;
+    color: #000000
+}
+
+#background-image {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.bio {
+  text-align: center;
+  color: #000000
+}
+
+#about .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#about .center:hover {
+  border-radius: 0%;
+}
+
+
+#image-1 {
+  background-image: url("images/image-1.jpg");
+}
+#image-2 {
+  background-image: url("images/image-2.jpg");
+}
+#image-3 {
+  background-image: url("images/image-3.jpg");
+}
+#image-4 {
+  background-image: url("images/image-4.jpg");
+}
+#image-5 {
+  background-image: url("images/image-5.jpg");
+}
+#image-6 {
+  background-image: url("images/image-6.jpg");
+}
+#image-7 {
+  background-image: url("images/image-7.jpg");
+}
+#image-8 {
+  background-image: url("images/image-8.jpg");
+  background-position: bottom;
+}
